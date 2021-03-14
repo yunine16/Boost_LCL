@@ -1,1 +1,126 @@
-<h1>profile page</h1>
+<div class="title">
+    <p class="title-main">Lead Communication and Link(L.C.L)</p>
+    <p class="title-sub">自己紹介カード作成ツール</p>
+    <p class="title-cat">個人プロフィール</p>
+    <hr>
+</div>
+<div class="canvas-wrapper">
+    <canvas id="js-canvas" class= "canvas"></canvas>
+    <button id="js-draw" class="canvasBtn">描画</button>
+    <button id="js-save" class="canvasBtn">保存</button>
+</div>
+<div class="input-wrapper">
+    <form class="form">
+        <div class="form-parts">
+            <p>名前(ニックネームOK)</p>
+            <div>
+                <input type="text" id="js-name" value="">
+            </div>
+        </div>
+        <div class="form-parts">
+            <p>振り仮名(ローマ字)</p>
+            <div>
+                <input type="text" id="js-name-ruby" value="">
+            </div>
+        </div>
+        <div class="form-parts">
+            <p>大学・専門学校</p>
+            <div>
+                <input type="text" id="js-school-name" value="">
+            </div>
+        </div>
+        <div class="form-parts">
+            <p>学部・研究科・コース</p>
+            <div>
+                <input type="text" id="js-school-major" value="">
+            </div>
+        </div>
+        <div class="form-parts">
+            <p>学年</p>
+            <select id="js-grade">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+            </select>
+        </div>
+
+        <hr class="form-border">
+        <p class="form-stack">技術スタック</p>
+        <div class="form-parts">
+            <p>得意領域</p>
+            <select id="js-strength">
+                <option>webフロントエンド</option>
+                <option>モバイル(iOS)</option>
+                <option>モバイル(Android)</option>
+                <option>バックエンド</option>
+                <option>デザイン</option>
+                <option>組み込み</option>
+                <option>機械学習</option>
+                <option>サーバー構築</option>
+                <option>クラウド</option>
+                <option>アイデア</option>
+            </select>
+        </div>
+
+        <div class="form-parts">
+            <p>得意な言語・フレームワーク(6個まで)</p>
+            <div class="form-parts-strength">
+                <p><input name="js-strength" type="checkbox" value="c">C/C++</p>
+                <p><input name="js-strength" type="checkbox" value="csharp">C#</p>
+                <p><input name="js-strength" type="checkbox" value="css">CSS3</p>
+                <p><input name="js-strength" type="checkbox" value="">Dart</p>
+                <p><input name="js-strength" type="checkbox" value="">Go</p>
+                <p><input name="js-strength" type="checkbox" value="html">HTML5</p>
+                <p><input name="js-strength" type="checkbox" value="java">Java</p>
+                <p><input name="js-strength" type="checkbox" value="">Javascript</p>
+                <p><input name="js-strength" type="checkbox" value="">Kotolin</p>
+                <p><input name="js-strength" type="checkbox" value="">Objective-C</p>
+                <p><input name="js-strength" type="checkbox" value="">Perl</p>
+                <p><input name="js-strength" type="checkbox" value="">PHP</p>
+                <p><input name="js-strength" type="checkbox" value="python">Python</p>
+                <p><input name="js-strength" type="checkbox" value="">Ruby</p>
+                <p><input name="js-strength" type="checkbox" value="">Rust</p>
+                <p><input name="js-strength" type="checkbox" value="">Scala</p>
+                <p><input name="js-strength" type="checkbox" value="">Swift</p>
+                <p><input name="js-strength" type="checkbox" value="">TypeScript</p>
+                <p><input name="js-strength" type="checkbox" value="rails">Rails</p>
+                <p><input name="js-strength" type="checkbox" value="">Laravel</p>
+                <p><input name="js-strength" type="checkbox" value="">CakePHP</p>
+                <p><input name="js-strength" type="checkbox" value="">dJango</p>
+                <p><input name="js-strength" type="checkbox" value="">Flask</p>
+                <p><input name="js-strength" type="checkbox" value="">FastAPI</p>
+                <p><input name="js-strength" type="checkbox" value="">Spring</p>
+                <p><input name="js-strength" type="checkbox" value="">Play</p>
+                <p><input name="js-strength" type="checkbox" value="">Flutter</p>
+                <p><input name="js-strength" type="checkbox" value="">iOS</p>
+                <p><input name="js-strength" type="checkbox" value="">Android</p>
+                <p><input name="js-strength" type="checkbox" value="">Unity</p>
+                <p><input name="js-strength" type="checkbox" value="vue">Vue.js</p>
+                <p><input name="js-strength" type="checkbox" value="">React</p>
+                <p><input name="js-strength" type="checkbox" value="">Angular</p>
+                <p><input name="js-strength" type="checkbox" value="">Nuxt.js</p>
+                <p><input name="js-strength" type="checkbox" value="">Next.js</p>
+                <p><input name="js-strength" type="checkbox" value="">Scss(Sass)</p>
+            </div>
+        </div>
+        
+        <div class="form-parts">
+            <p>SNSアカウント</p>
+            <select id="js-sns">
+                <option>twitter</option>
+                <option>instagram</option>
+                <option>github</option>
+                <option>qitta</option>
+                <option>facebook</option>
+            </select>
+            <p id="js-sns-URL"></p>
+            <input id="js-sns-account">
+        </div>
+        
+    </form>
+</div>
+
+

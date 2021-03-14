@@ -1,3 +1,164 @@
 // Place all the styles related to the profiles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$mainC: #892e05;
+$baseC: #f5a633;
+$accentC: #fff;
+
+html,
+body {
+	margin: 0;
+	width: 100%;
+	height: auto;
+	font-size: 16px;
+	box-sizing: border-box;
+}
+body {
+	// background-color: aqua;
+}
+.title {
+	position: fixed;
+	display: flex;
+	height: 10vh;
+	align-items: flex-end;
+	background-color: #fff;
+	z-index: 10;
+	top: 0;
+	width: 100%;
+}
+.title-main {
+	left: 3vw;
+	position: relative;
+	// width: 100%;
+	margin: 0;
+	color: $mainC;
+	// background-color: #fff;
+	top: 3%;
+	font-size: 2.5vw;
+	font-weight: bold;
+	width: 50%;
+}
+.title-sub {
+	left: 5%;
+	position: relative;
+	width: 20%;
+	margin: 0;
+	color: $mainC;
+	// background-color: #fff;
+	font-size: 1.6vw;
+	top: 1.5%;
+}
+.title-cat {
+	left: 15%;
+	position: relative;
+	width: 15%;
+	margin: 0;
+	color: #000;
+	// background-color: #fff;
+	font-size: 1.8vw;
+	top: 3.5%;
+}
+.title hr {
+	position: fixed;
+	width: 97%;
+	left: 3vw;
+	border-width: 3px 0px 0px 0px;
+	border-style: solid; /* 線種 */
+	border-color: $baseC; /* 線色 */
+	margin: 0;
+}
+.canvas {
+	// background-color: red;
+	width: 56vw;
+	// position: fixed;
+	height: 31.5vw;
+	// margin-left: 3vw;
+	margin-top: 15%;
+	border: 2px solid #000;
+}
+.canvas-wrapper {
+	width: 57%;
+	height: 100vh;
+	top: 10%;
+	position: fixed;
+	margin-left: 3vw;
+}
+.canvasBtn {
+	// position: fixed;
+	// margin-left: 3vw;
+	width: 12%;
+	height: 4%;
+	margin-top: 5%;
+	background-color: $baseC;
+	color: $accentC;
+	border-style: none;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	font-size: 1.6vw;
+	font-weight: bold;
+}
+.input-wrapper {
+	width: 40vw;
+	// height: 200vh;
+	background-color: $baseC;
+	position: absolute;
+	right: 0;
+	top: 10%;
+
+	p {
+		color: $accentC;
+	}
+}
+.form {
+	margin-top: 10%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.form-parts {
+	width: 100%;
+	margin: 3% 0 3% 5%;
+
+	p {
+		margin: 0 0 2% 0;
+		font-size: 1.5vw;
+		color: $accentC;
+	}
+	input {
+		width: 80%;
+		height: 3vh;
+		border: none;
+	}
+	select {
+		width: 30%;
+		height: 3vh;
+	}
+}
+.form:last-child {
+	margin-bottom: 10%;
+}
+
+.form-border {
+	border-width: 3px 0px 0px 0px;
+	border-style: solid; /* 線種 */
+	border-color: #fff; /* 線色 */
+	width: 90%;
+}
+.form-stack {
+	font-size: 2.2vw;
+	font-weight: bold;
+	margin: 0 0 0 5%;
+}
+.form-parts-strength {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: 5%;
+	p {
+		width: 33%;
+		display: flex;
+		align-items: center;
+	}
+	input {
+		width: 20%;
+	}
+}
