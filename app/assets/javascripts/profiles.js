@@ -74,7 +74,7 @@ function Draw() {
 				// 	// console.log('checked', icon.value);
 				//画像出す
 				const img = new Image();
-				img.src = `assets/${icon.value}.png`;
+				img.src = `assets/stack/${icon.value}.png`;
 				// 	img.onload = () => {
 				// 		ctx.drawImage(img, w / 40 + (w * 3) / 4, (h * 2) / 6, w / 20, w / 20);
 				// 	};
