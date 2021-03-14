@@ -1,1 +1,74 @@
-<h1>team page</h1>
+
+<h1>Lead Communication and Link</h1>
+<canvas id="js-team-canvas"></canvas>
+<button id="js-team-draw" type="button">
+  画面更新
+</button>
+<h3>チーム名</h3>
+<div>
+  <input type="text" id="js-team-name">
+</div>
+
+<h3>プロダクト名</h3>
+<div>
+  <input type="text" id="js-product-name">
+</div>
+
+<h3>メンバー</h3>
+<div>
+  <input type="text" id="js-member">
+  <input type="file" id="js-member-image">
+</div>
+
+
+<h3>ハッカソン開催日</h3>
+<select id="js-start-year">
+  <% (2020..2030).each do |i| %>
+  <option>
+    <%= i %>
+  </option>
+  <% end %>
+</select>
+年
+<select id="js-start-month">
+  <% (1..12).each do |i| %>
+  <option>
+    <%= i %>
+  </option>
+  <% end %>
+</select>
+月
+<select id="js-start-day">
+  <% (1..31).each do |i| %>
+  <option>
+    <%= i %>
+  </option>
+  <% end %>
+</select>
+日
+<h3>~</h3>
+<select id="js-end-year">
+  <% (2020..2030).each do |i| %>
+  <option>
+    <%= i %>
+  </option>
+  <% end %>
+</select>
+年
+<select id="js-end-month">
+  <% (1..12).each do |i| %>
+  <option>
+    <%= i %>
+  </option>
+  <% end %>
+</select>
+月
+<select id="js-end-day">
+  <% (1..31).each do |i| %>
+  <option>
+    <%= i %>
+  </option>
+  <% end %>
+</select>
+日
+
